@@ -17,8 +17,8 @@
 
 Feel free to connect, collaborate, or refactor something together (no promises on the debugging).
 
-[LinkedIn](https://www.linkedin.com/in/francisco-rose-cerna-303439355/)  
 <!--
+[LinkedIn](https://www.linkedin.com/in/francisco-rose-cerna-303439355/)  
 **franciscorosecerna/Franciscorosecerna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
