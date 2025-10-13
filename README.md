@@ -1,8 +1,8 @@
 <h1 align="center">👋 I'm Francisco</h1>
 <p align="center">4th-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
 
-   Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means  
-   Fluent in **English** and **Spanish**
+   - Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means  
+   - Fluent in **English** and **Spanish**
 > *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
 ---
@@ -55,13 +55,11 @@ Currently working on **formatconverter** - A .NET tool for file format conversio
 So far I learned:
 - Juggle C#, .NET, and JToken hell without losing my mind.
 - The difference between "it's just text" and "why is this binary cursed".
-- Streaming saves memory but costs sanity (still worth it).
+- Streaming saves memory but costs sanity (still worth it though).
 
 ---
 
 ### Dev Philosophy
-
-> "Clean architecture," they said. *"It'll be fun," they said.*
 
 > *"Some days I build systems. Some days the systems build me."*
 
