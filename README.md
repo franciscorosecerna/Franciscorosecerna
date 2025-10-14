@@ -50,6 +50,7 @@ Passionate about clean architecture, databases, and pretending I know what I'm d
    
 Currently working on **formatconverter** - A .NET tool for file format conversion  
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-lightgrey?logo=github)](https://github.com/franciscorosecerna/FormatConverter)
 [![.NET Tool](https://img.shields.io/badge/.NET-Tool-blue)](https://www.nuget.org/packages/formatconverter)
    
 So far I learned:
