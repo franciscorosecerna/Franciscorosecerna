@@ -74,5 +74,5 @@ So far I learned:
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/users/353778765068763138)
 
 <p align="center">
-<i>"it just works"</i>
+<i><b>"it just works"</b></i>
 </p>
