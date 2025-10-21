@@ -1,16 +1,16 @@
 <h1 align="center">👋 I'm Francisco</h1>
 <p align="center">4th-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
 
-   - Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means  
+   - Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means
    - Fluent in **English** and **Spanish**
-> *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
 ---
 
 ### About Me
 
 Backend developer from Argentina who enjoys building stuff and occasionally understanding how it works.  
-Passionate about clean architecture, databases, and pretending I know what I'm doing.
+Passionate about clean architecture, databases, and pretending I know what I'm doing.  
+Currently diving deeper into .NET performance optimization and exploring low-level C# interop with native libraries.
 
 ---
 
@@ -43,17 +43,18 @@ Passionate about clean architecture, databases, and pretending I know what I'm d
 
 ![Francisco's GitHub Stats](https://github-readme-stats.vercel.app/api?username=franciscorosecerna&show_icons=true&theme=radical&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=franciscorosecerna&layout=compact&theme=radical&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=franciscorosecerna&theme=radical&hide_border=true)
 
 ---
 
 ### Current Status
    
-Currently working on **formatconverter** - A .NET tool for file format conversion  
+Currently working on **Formatconverter** - A .NET tool for file format conversion  
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-lightgrey?logo=github)](https://github.com/franciscorosecerna/FormatConverter)
 [![.NET Tool](https://img.shields.io/badge/.NET-Tool-blue)](https://www.nuget.org/packages/formatconverter)
    
-So far I learned:
+So far, I've learned::
 - Juggle C#, .NET, and JToken hell without losing my mind.
 - The difference between "it's just text" and "why is this binary cursed".
 - Streaming saves memory but costs sanity (still worth it though).
@@ -61,6 +62,7 @@ So far I learned:
 ---
 
 ### Dev Philosophy
+> *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
 > *"Some days I build systems. Some days the systems build me."*
 
