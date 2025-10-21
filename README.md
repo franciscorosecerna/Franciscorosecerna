@@ -54,7 +54,7 @@ Currently working on **Formatconverter** - A .NET tool for file format conversio
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-lightgrey?logo=github)](https://github.com/franciscorosecerna/FormatConverter)
 [![.NET Tool](https://img.shields.io/badge/.NET-Tool-blue)](https://www.nuget.org/packages/formatconverter)
    
-So far, I've learned::
+So far, I've learned:
 - Juggle C#, .NET, and JToken hell without losing my mind.
 - The difference between "it's just text" and "why is this binary cursed".
 - Streaming saves memory but costs sanity (still worth it though).
