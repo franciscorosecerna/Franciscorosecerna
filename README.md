@@ -47,20 +47,6 @@ Currently diving deeper into .NET performance optimization and exploring low-lev
 
 ---
 
-### Current Status
-   
-Currently working on **Formatconverter** - A .NET tool for file format conversion  
-
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-lightgrey?logo=github)](https://github.com/franciscorosecerna/FormatConverter)
-[![.NET Tool](https://img.shields.io/badge/.NET-Tool-blue)](https://www.nuget.org/packages/formatconverter)
-   
-So far, I've learned:
-- Juggle C#, .NET, and JToken hell without losing my mind.
-- The difference between "it's just text" and "why is this binary cursed".
-- Streaming saves memory but costs sanity (still worth it though).
-
----
-
 ### Dev Philosophy
 > *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
