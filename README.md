@@ -52,8 +52,6 @@ I create bugs just to fix them later (unintentionally, though).
 
 > *"Some days I build systems. Some days the systems build me."*
 
-> *"Keep trying. It's not like you deleted the database or anything."*
-
 ---
 
 ### Get in Touch
