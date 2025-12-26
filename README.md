@@ -1,5 +1,5 @@
 <h1 align="center">👋 I'm Francisco</h1>
-<p align="center">4th-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
+<p align="center">Final-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
 
    - Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means
    - Fluent in **English** and **Spanish**
@@ -10,7 +10,7 @@
 
 Backend developer from Argentina who enjoys building stuff and occasionally understanding how it works.  
 Passionate about clean architecture, databases, and pretending I know what I'm doing.  
-Currently diving deeper into .NET performance optimization and exploring low-level C# interop with native libraries.
+I create bugs just to fix them later (unintentionally, though).
 
 ---
 
@@ -27,7 +27,7 @@ Currently diving deeper into .NET performance optimization and exploring low-lev
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
-**Frontend** *(when backend isn't enough suffering)*  
+**Frontend** *(when backend alone isn't enough suffering)*  
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7E018?style=flat-square&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
@@ -62,5 +62,5 @@ Currently diving deeper into .NET performance optimization and exploring low-lev
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/users/353778765068763138)
 
 <p align="center">
-<i><b>"it just works"</b></i>
+<i><b>"it just works (on my machine)"</b></i>
 </p>
