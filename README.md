@@ -1,16 +1,15 @@
 <h1 align="center">👋 I'm Francisco</h1>
 <p align="center">Final-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
 
-   - Developing backend systems with C# and .NET while trying to understand what ```void (*(*f[])()) ()``` means
+   - Developing backend systems with C# and .NET while writing a commit message that says "fix" for the 8th time
    - Fluent in **English** and **Spanish**
 
 ---
 
 ### About Me
 
-Backend developer from Argentina who enjoys building stuff and occasionally understanding how it works.  
-Passionate about clean architecture, databases, and pretending I know what I'm doing.  
-I create bugs just to fix them later (unintentionally, though).
+Backend dev from Argentina, final-year Systems Engineering student and full-time bug manufacturer (unintentionally, though). I work mostly with C# and .NET, occasionally touch a database and sometimes venture into frontend when I'm feeling particularly masochistic.
+Currently learning how systems work by building them until they don't.
 
 ---
 
@@ -22,18 +21,18 @@ I create bugs just to fix them later (unintentionally, though).
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-5C2D91?style=flat-square&logo=dotnet&logoColor=white)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-68217A?style=flat-square&logo=nuget&logoColor=white)
 
-
 **Database**  
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 **Frontend** *(when backend alone isn't enough suffering)*  
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7E018?style=flat-square&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 
-**Tools & Other**
-
+**Tools & Other**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
@@ -48,9 +47,8 @@ I create bugs just to fix them later (unintentionally, though).
 ---
 
 ### Dev Philosophy
-> *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
-> *"Some days I build systems. Some days the systems build me."*
+> *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
 ---
 
