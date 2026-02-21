@@ -1,15 +1,16 @@
 <h1 align="center">👋 I'm Francisco</h1>
 <p align="center">Final-year Systems Engineering student | Backend Developer | Professional Bug Creator</p>
 
-   - Developing backend systems with C# and .NET while writing a commit message that says "fix" for the 8th time
+   - Developing backend systems with C# and .NET while writing a commit message that says "fix" for the 8th time in a row
    - Fluent in **English** and **Spanish**
 
 ---
 
 ### About Me
 
-Backend dev from Argentina, final-year Systems Engineering student and full-time bug manufacturer (unintentionally, though). I work mostly with C# and .NET, occasionally touch a database and sometimes venture into frontend when I'm feeling particularly masochistic.
-Currently learning how systems work by building them until they don't.
+Backend dev from Argentina, final-year Systems Engineering student and full-time bug manufacturer (unintentionally, though). I work mostly with C# and .NET, occasionally spend more time with databases than I'd like to admit and sometimes venture into frontend when I'm feeling particularly masochistic.
+
+I learn by building things I have no business building — from writing my own regex engine in C# to cloning apps to implementing an HTTP server in C++. Projects rarely finish, but something always sticks
 
 ---
 
