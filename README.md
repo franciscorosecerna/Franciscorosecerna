@@ -18,7 +18,7 @@ I learn by building things I have no business building — from writing my own r
 
 What I build when I ignore the "don't reinvent the wheel" rule:
 
-Proyect | Description | Stack |
+Project | Description | Stack |
 | :--- | :--- | :--- |
 | **[Mini_http](https://github.com/franciscorosecerna/Mini_http)** | An HTTP server implemented from scratch. (which, against all odds, correctly returns a 418 when asked nicely) | C++ |
 | **[MyRegex](https://github.com/franciscorosecerna/MyRegex)** | My own regular expression engine. An excellent excuse to fight with finite automata, syntax trees and learn why people who dedicate themselves exclusively to writing compilers exist. | C# • .NET |
