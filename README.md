@@ -1,14 +1,16 @@
 <h1 align="center">👋 I'm Francisco</h1>
 <p align="center">Final-year Systems Engineering student | Backend Developer | Professional Bug Creator </p>
 
-   - Developing backend systems while writing a commit message that says "fix" for the 8th time in a row
-   - Fluent in **English** and **Spanish** (and in reading stack traces at 2am)
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-English%20%7C%20Spanish-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Main%20Stack-.NET%20%7C%20C%23%20%7C%20C%2B%2B-blueviolet?style=flat-square" />
+</p>
 
 ---
 
 ### About Me
 
-Backend dev from Argentina, final-year Systems Engineering student and full-time bug manufacturer (unintentionally, though). I work mostly with C# and .NET, occasionally spend more time with databases than I'd like to admit and sometimes venture into frontend when I'm feeling particularly masochistic.
+Backend developer from Argentina, final-year Systems Engineering student, and full-time bug manufacturer (unintentionally, though). I spend most of my time architecturalizing backend systems with **C# and .NET**, writing a commit message that says "fix" for the 8th time in a row, and reading stack traces at 2 AM.
 
 I learn by building things I have no business building — from writing my own regex engine in C# to cloning apps to implementing an HTTP server in C++. Projects rarely finish, but something always sticks.
 
@@ -20,7 +22,7 @@ What I build when I ignore the "don't reinvent the wheel" rule:
 
 Project | Description | Stack |
 | :--- | :--- | :--- |
-| **[Mini_http](https://github.com/franciscorosecerna/Mini_http)** | An HTTP server implemented from scratch. (which, against all odds, correctly returns a 418 when asked nicely) | C++ |
+| **[Mini_http](https://github.com/franciscorosecerna/Mini_http)** | An HTTP server implemented from scratch. (which, against all odds, correctly returns a 418 I'm a Teapot) | C++ |
 | **[MyRegex](https://github.com/franciscorosecerna/MyRegex)** | My own regular expression engine. An excellent excuse to fight with finite automata, syntax trees and learn why people who dedicate themselves exclusively to writing compilers exist. | C# • .NET |
 
 ---
@@ -73,5 +75,5 @@ Project | Description | Stack |
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/users/353778765068763138)
 
 <p align="center">
-<i><b>"it just works (on my machine)"</b></i>
+<i><b>Without fear of success</b></i>
 </p>
