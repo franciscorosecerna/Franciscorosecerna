@@ -6,13 +6,13 @@
   <img src="https://img.shields.io/badge/Main%20Stack-.NET%20%7C%20C%23%20%7C%20C%2B%2B-blueviolet?style=flat-square" />
 </p>
 
----
-
 ### About Me
 
-Backend developer from Argentina, final-year Systems Engineering student, and full-time bug manufacturer (unintentionally, though). I spend most of my time architecturalizing backend systems with **C# and .NET**, writing a commit message that says "fix" for the 8th time in a row, and reading stack traces at 2 AM.
+Backend developer from Argentina, final-year Systems Engineering student, and full-time bug manufacturer (unintentionally, though). Currently wrapping up my degree and actively looking for my first full-time role as a Backend Developer.
 
-I learn by building things I have no business building — from writing my own regex engine in C# to cloning apps to implementing an HTTP server in C++. Projects rarely finish, but something always sticks.
+I spend more time than I want to admit in databases, designing backend systems with C# and .NET, writing a commit message that says "fix" for the 8th time in a row and reading stack traces at 2 AM.
+
+I learn by building things I have no business building — from writing my own regex engine in C# to cloning apps to implementing an HTTP server in C++. Occasionally I even finish them.
 
 ---
 
@@ -23,9 +23,7 @@ What I build when I ignore the "don't reinvent the wheel" rule:
 Project | Description | Stack |
 | :--- | :--- | :--- |
 | **[Mini_http](https://github.com/franciscorosecerna/Mini_http)** | An HTTP server implemented from scratch. (which, against all odds, correctly returns a 418 I'm a Teapot) | C++ |
-| **[MyRegex](https://github.com/franciscorosecerna/MyRegex)** | My own regular expression engine. An excellent excuse to fight with finite automata, syntax trees and learn why people who dedicate themselves exclusively to writing compilers exist. | C# • .NET |
-
----
+| **[MyRegex](https://github.com/franciscorosecerna/MyRegex)** | My own regular expression engine. An excuse to dive into finite automata, syntax trees, and understand why compiler engineers deserve more respect. | C# • .NET |
 
 ### Tech Stack
 
@@ -52,20 +50,16 @@ Project | Description | Stack |
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
----
-
 ### GitHub Stats
 
 ![Francisco's GitHub Stats](https://github-readme-stats.vercel.app/api?username=franciscorosecerna&show_icons=true&theme=radical&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=franciscorosecerna&layout=compact&theme=radical&hide_border=true)
 
----
-
 ### Dev Philosophy
 
 > *"Debugging is just me versus me. Usually, I lose. Skill issue I guess."*
 
-> *"Build first, understand later."*
+> *"If I don't understand it, I'll probably rebuild the entire thing."*
 
 ---
 
@@ -73,6 +67,7 @@ Project | Description | Stack |
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/francisco-rose-cerna-303439355/)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/users/353778765068763138)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:franciscorosecerna88@gmail.com)
 
 <p align="center">
 <i><b>Without fear of success</b></i>
