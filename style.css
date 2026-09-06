@@ -72,6 +72,23 @@ nav a:hover {
   color: var(--accent);
 }
 
+.language-toggle {
+  margin-left: 24px;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--accent2);
+  cursor: pointer;
+  font: 500 12px 'JetBrains Mono', monospace;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .hero {
   padding: 70px 0 60px;
   border-bottom: 1px solid var(--line);
@@ -392,6 +409,10 @@ footer h2 {
     margin-left: 0;
   }
 
+  .language-toggle {
+    margin-left: 0;
+  }
+
   .hero {
     padding: 48px 0;
   }
@@ -412,10 +433,6 @@ footer h2 {
   .edu-item {
     flex-direction: column;
     gap: 4px;
-  }
-
-  nav a {
-    margin-left: 14px;
   }
 
   .langs {

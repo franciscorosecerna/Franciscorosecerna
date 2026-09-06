@@ -54,9 +54,10 @@
     <header>
       <div class="name mono">Francisco Rose Cerna</div>
       <nav>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#stack">Stack</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+        <a href="#stack" data-i18n="navStack">Stack</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+        <button class="language-toggle" type="button" aria-label="Switch to English" title="Switch to English">EN</button>
       </nav>
     </header>
 
@@ -67,25 +68,25 @@
             <div class="dot"></div><div class="dot"></div><div class="dot"></div>
           </div>
           <div class="terminal-body">
-            <div class="line terminal-line" data-text="$ whoami"></div>
-            <div class="line out terminal-line" data-text="Francisco Rose Cerna"></div>
-            <div class="line terminal-line" data-text="$ cat rol.txt"></div>
-            <div class="line out terminal-line" data-text="Software Developer y Estudiante de Ingeniería en Sistemas (5º año)"></div>
-            <div class="line terminal-line" data-text="$ cat ubicacion.txt"></div>
-            <div class="line out terminal-line" data-text="Santa Fe, Argentina"></div>
-            <div class="line terminal-line" data-text="$ "><span class="cursor"></span></div>
+            <div class="line terminal-line" data-i18n="terminalWhoami" data-text="$ whoami"></div>
+            <div class="line out terminal-line" data-i18n="terminalName" data-text="Francisco Rose Cerna"></div>
+            <div class="line terminal-line" data-i18n="terminalRoleCommand" data-text="$ cat rol.txt"></div>
+            <div class="line out terminal-line" data-i18n="terminalRole" data-text="Software Developer y Estudiante de Ingeniería en Sistemas (5º año)"></div>
+            <div class="line terminal-line" data-i18n="terminalLocationCommand" data-text="$ cat ubicacion.txt"></div>
+            <div class="line out terminal-line" data-i18n="terminalLocation" data-text="Santa Fe, Argentina"></div>
+            <div class="line terminal-line" data-i18n="terminalPrompt" data-text="$ "><span class="cursor"></span></div>
           </div>
         </div>
 
         <div class="hero-text">
-          <span class="tag">Backend · sistemas · arquitectura de software</span>
-          <p>Construyo servidores, motores y APIs desde cero para entender cómo funcionan por dentro, no solo para usarlos. C#, C++ y TypeScript son mis herramientas principales.</p>
+          <span class="tag" data-i18n="heroTag">Backend · sistemas · arquitectura de software</span>
+          <p data-i18n="heroDescription">Construyo servidores, motores y APIs desde cero para entender cómo funcionan por dentro, no solo para usarlos. C#, C++ y TypeScript son mis herramientas principales.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="proyectos">
-      <h2>Proyectos</h2>
+      <h2 data-i18n="projectsTitle">Proyectos</h2>
 
       <div class="repo">
         <div class="repo-top">
@@ -97,9 +98,9 @@
           <span class="tag-pill">sockets</span>
         </div>
         <ul>
-          <li>Servidor HTTP/1.1 desarrollado desde cero utilizando sockets nativos.</li>
-          <li>Arquitectura modular basada en request/response y middleware chain.</li>
-          <li>Compatibilidad Windows/POSIX y gestión explícita de conexiones y recursos.</li>
+          <li data-i18n="miniHttp1">Servidor HTTP/1.1 desarrollado desde cero utilizando sockets nativos.</li>
+          <li data-i18n="miniHttp2">Arquitectura modular basada en request/response y middleware chain.</li>
+          <li data-i18n="miniHttp3">Compatibilidad Windows/POSIX y gestión explícita de conexiones y recursos.</li>
         </ul>
         <a class="repo-link" href="https://github.com/franciscorosecerna/Mini_http" target="_blank" rel="noopener">github.com/franciscorosecerna/Mini_http</a>
       </div>
@@ -114,9 +115,9 @@
           <span class="tag-pill">.NET</span>
         </div>
         <ul>
-          <li>Motor de expresiones regulares desarrollado desde cero, sin System.Text.RegularExpressions.</li>
-          <li>AST modular con soporte para cuantificadores, grupos, alternaciones, clases de caracteres y lookaround.</li>
-          <li>Implementación de backtracking y operaciones IsMatch, Match, Replace, Split y búsqueda de patrones.</li>
+          <li data-i18n="myRegex1">Motor de expresiones regulares desarrollado desde cero, sin System.Text.RegularExpressions.</li>
+          <li data-i18n="myRegex2">AST modular con soporte para cuantificadores, grupos, alternaciones, clases de caracteres y lookaround.</li>
+          <li data-i18n="myRegex3">Implementación de backtracking y operaciones IsMatch, Match, Replace, Split y búsqueda de patrones.</li>
         </ul>
         <a class="repo-link" href="https://github.com/franciscorosecerna/MyRegex" target="_blank" rel="noopener">github.com/franciscorosecerna/MyRegex</a>
       </div>
@@ -133,9 +134,9 @@
           <span class="tag-pill">SvelteKit</span>
         </div>
         <ul>
-          <li>API REST con autenticación JWT, refresh tokens y autorización.</li>
-          <li>Funcionalidades de publicaciones, comentarios, follows y búsqueda.</li>
-          <li>Rate limiting, subida de imágenes y arquitectura modular.</li>
+          <li data-i18n="miniX1">API REST con autenticación JWT, refresh tokens y autorización.</li>
+          <li data-i18n="miniX2">Funcionalidades de publicaciones, comentarios, follows y búsqueda.</li>
+          <li data-i18n="miniX3">Rate limiting, subida de imágenes y arquitectura modular.</li>
         </ul>
         <a class="repo-link" href="https://github.com/franciscorosecerna/MiniX-Back" target="_blank" rel="noopener">github.com/franciscorosecerna/MiniX-Back</a>
       </div>
@@ -151,80 +152,80 @@
           <span class="tag-pill">SQLite</span>
         </div>
         <ul>
-          <li>Sistema de inventario, compras, ventas, usuarios y permisos.</li>
-          <li>Repository pattern, dependency injection y control de concurrencia optimista.</li>
-          <li>Transacciones ACID y sistema de auditoría.</li>
+          <li data-i18n="market1">Sistema de inventario, compras, ventas, usuarios y permisos.</li>
+          <li data-i18n="market2">Repository pattern, dependency injection y control de concurrencia optimista.</li>
+          <li data-i18n="market3">Transacciones ACID y sistema de auditoría.</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2>Educación</h2>
+      <h2 data-i18n="educationTitle">Educación</h2>
       <div class="edu-item">
         <div>
-          <div class="role">Ingeniería en Sistemas</div>
-          <div class="place">Universidad Abierta Interamericana</div>
+          <div class="role" data-i18n="degree">Ingeniería en Sistemas</div>
+          <div class="place" data-i18n="university">Universidad Abierta Interamericana</div>
         </div>
         <div class="period">2022 - 2026/2027 (esperado) 5º año</div>
       </div>
       <div class="edu-item">
         <div>
-          <div class="role">First Certificate in English (FCE)</div>
-          <div class="place">Cambridge Nivel B2</div>
+          <div class="role" data-i18n="fce">First Certificate in English (FCE)</div>
+          <div class="place" data-i18n="cambridge">Cambridge Nivel B2</div>
         </div>
         <div class="period"></div>
       </div>
     </section>
 
     <section class="section" id="stack">
-      <h2>Tecnologías</h2>
+      <h2 data-i18n="technologiesTitle">Tecnologías</h2>
 
       <div class="stack-group">
-        <span class="label">Lenguajes</span>
+        <span class="label" data-i18n="languagesLabel">Lenguajes</span>
         <div class="stack-items">
           <span>C#</span><span>C++</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span>
         </div>
       </div>
 
       <div class="stack-group">
-        <span class="label">Frameworks y librerías</span>
+        <span class="label" data-i18n="frameworksLabel">Frameworks y librerías</span>
         <div class="stack-items">
           <span>ASP.NET Core</span><span>.NET</span><span>Hono</span><span>Bun</span><span>Entity Framework Core</span><span>Drizzle ORM</span>
         </div>
       </div>
 
       <div class="stack-group">
-        <span class="label">Bases de datos</span>
+        <span class="label" data-i18n="databasesLabel">Bases de datos</span>
         <div class="stack-items">
           <span>PostgreSQL</span><span>SQL Server</span><span>SQLite</span><span>MongoDB</span>
         </div>
       </div>
 
       <div class="stack-group">
-        <span class="label">Arquitectura y conceptos</span>
+        <span class="label" data-i18n="architectureLabel">Arquitectura y conceptos</span>
         <div class="stack-items">
           <span>REST</span><span>JWT</span><span>Clean Architecture</span><span>Repository Pattern</span><span>DI / IoC</span>
         </div>
       </div>
 
       <div class="stack-group">
-        <span class="label">Herramientas</span>
+        <span class="label" data-i18n="toolsLabel">Herramientas</span>
         <div class="stack-items">
           <span>Git</span><span>GitHub</span><span>Docker</span>
         </div>
       </div>
 
       <div class="stack-group">
-        <span class="label">Idiomas</span>
+        <span class="label" data-i18n="spokenLanguagesLabel">Idiomas</span>
         <div class="langs">
-          <div><span>Español</span><span class="lvl">Nativo</span></div>
-          <div><span>Inglés</span><span class="lvl">B2 (FCE)</span></div>
+          <div><span data-i18n="spanish">Español</span><span class="lvl" data-i18n="native">Nativo</span></div>
+          <div><span data-i18n="english">Inglés</span><span class="lvl">B2 (FCE)</span></div>
         </div>
       </div>
     </section>
 
     <footer id="contacto">
-      <h2>¿Un proyecto backend en mente? Hablemos.</h2>
+      <h2 data-i18n="contactTitle">¿Un proyecto backend en mente? Hablemos.</h2>
       <div class="contact-row">
         <a href="mailto:Franciscorosecerna88@gmail.com">Franciscorosecerna88@gmail.com</a>
         <a href="tel:+5493412020426">+54 9 3412020426</a>
@@ -237,6 +238,6 @@
       </div>
     </footer>
   </div>
-  <script src="main.js"s></script>
+  <script src="main.js"></script>
 </body>
 </html>
