@@ -2,7 +2,7 @@ const terminalLines = document.querySelectorAll('.terminal-line');
 const languageToggle = document.querySelector('.language-toggle');
 const typingSpeed = 30;
 const linePause = 300;
-const terminalReady = false;
+let terminalReady = false;
 
 const translations = {
   es: {
