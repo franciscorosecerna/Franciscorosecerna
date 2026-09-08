@@ -62,6 +62,11 @@ header .name {
   color: var(--ink);
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   color: var(--ink-soft);
   font-size: 14px;
@@ -71,6 +76,33 @@ nav a {
 
 nav a:hover {
   color: var(--accent);
+}
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  margin-left: 24px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(79, 166, 156, 0.10), rgba(79, 166, 156, 0.03));
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-link:hover,
+.cv-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(79, 166, 156, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .language-toggle {
@@ -243,6 +275,7 @@ nav a:hover {
 .repo-year {
   font-size: 12.5px;
   color: var(--ink-soft);
+  white-space: nowrap;
 }
 
 .repo p.desc {
@@ -349,6 +382,7 @@ nav a:hover {
 
 .langs {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -394,6 +428,26 @@ footer h2 {
   overflow-wrap: anywhere;
 }
 
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0 clamp(16px, 3vw, 24px);
+  }
+
+  .hero-grid {
+    gap: 36px;
+  }
+
+  .terminal-body {
+    font-size: 13px;
+  }
+
+  nav a,
+  .language-toggle,
+  .cv-link {
+    margin-left: 18px;
+  }
+}
+
 @media (max-width: 700px) {
   header {
     align-items: flex-start;
@@ -401,18 +455,19 @@ footer h2 {
   }
 
   nav {
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 8px 14px;
+    row-gap: 10px;
+  }
+
+  nav a,
+  .language-toggle,
+  .cv-link {
+    margin-left: 0;
   }
 
   nav a {
-    margin-left: 0;
-  }
-
-  .language-toggle {
-    margin-left: 0;
+    margin-right: 16px;
   }
 
   .hero {
@@ -421,11 +476,16 @@ footer h2 {
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
+  }
+
+  .hero-text {
+    order: -1;
   }
 
   .repo-top {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .section {
@@ -449,15 +509,21 @@ footer h2 {
     flex-direction: column;
     gap: 4px;
   }
+
+  .contact-row {
+    gap: 18px;
+  }
 }
 
 @media (max-width: 420px) {
   header {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   nav {
     justify-content: flex-start;
+    width: 100%;
   }
 
   .terminal-body {
@@ -480,5 +546,29 @@ footer h2 {
   .contact-row {
     gap: 14px;
     margin-bottom: 32px;
+  }
+
+  .stack-items span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .tag-pill {
+    font-size: 11px;
+  }
+
+  .repo-name {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .cursor {
+    animation: none;
+    opacity: 1;
   }
 }

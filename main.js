@@ -1,5 +1,6 @@
 const terminalLines = document.querySelectorAll('.terminal-line');
 const languageToggle = document.querySelector('.language-toggle');
+const cvLink = document.querySelector('.cv-link');
 const typingSpeed = 30;
 const linePause = 300;
 let terminalReady = false;
@@ -14,6 +15,7 @@ const translations = {
     navProjects:'Proyectos',
     navStack:'Stack',
     navContact:'Contacto',
+    cvDownload:'Descargar CV',
     terminalWhoami:'$ quiensoy',
     terminalName:'Francisco Rose Cerna',
     terminalRoleCommand:'$ cat rol.txt',
@@ -62,6 +64,7 @@ const translations = {
     navProjects:'Projects',
     navStack:'Stack',
     navContact:'Contact',
+    cvDownload:'Download CV',
     terminalWhoami:'$ whoami',
     terminalName:'Francisco Rose Cerna',
     terminalRoleCommand:'$ cat role.txt',
@@ -130,6 +133,13 @@ const applyLanguage = (language) => {
       element.textContent = text;
     }
   });
+
+  if (cvLink) {
+    cvLink.href = language === 'es'
+      ? 'https://docs.google.com/document/d/1AI45_KIOIz-lhY3GVzImKwg7aII7hjpHffgZKOReqqs/export?format=pdf'
+      : 'https://docs.google.com/document/d/15-olD69gPF3bbUwcRdsNkuK7XySvQUJjD1J5hAGsORs/export?format=pdf';
+    cvLink.setAttribute('download', language === 'es' ? 'Francisco-Rose-Cerna-CV-ES.pdf' : 'Francisco-Rose-Cerna-CV-EN.pdf');
+  }
 
   languageToggle.textContent = language === 'es' ? 'EN' : 'ES';
   languageToggle.setAttribute('aria-label', language === 'es' ? 'Switch to English' : 'Cambiar a español');
