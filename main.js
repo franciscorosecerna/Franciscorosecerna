@@ -6,10 +6,15 @@ let terminalReady = false;
 
 const translations = {
   es: {
+    period:'2022 - 2026/2027 (esperado) 5º año',
+    marketTitle:'Sistema de gestión de supermercado',
+    miniXTitle:'MiniX — red social',
+    myRegexTitle:'MyRegex — motor de expresiones regulares',
+    miniHttpTitle:'MiniHTTP — servidor HTTP desde cero',
     navProjects:'Proyectos',
     navStack:'Stack',
     navContact:'Contacto',
-    terminalWhoami:'$ whoami',
+    terminalWhoami:'$ quiensoy',
     terminalName:'Francisco Rose Cerna',
     terminalRoleCommand:'$ cat rol.txt',
     terminalRole:'Software Developer y Estudiante de Ingeniería en Sistemas (5º año)',
@@ -49,6 +54,11 @@ const translations = {
     contactTitle:'¿Un proyecto backend en mente? Hablemos.'
   },
   en: {
+    period:'2022 - 2026/2027 (expected) 5th year',
+    marketTitle:'Supermarket Management System',
+    miniXTitle:'MiniX — social network',
+    myRegexTitle:'MyRegex — regular expression engine',
+    miniHttpTitle:'MiniHTTP — HTTP server from scratch',
     navProjects:'Projects',
     navStack:'Stack',
     navContact:'Contact',
@@ -132,10 +142,58 @@ languageToggle.addEventListener('click', () => applyLanguage(currentLanguage ===
 
 const wait = (duration) => new Promise((resolve) => setTimeout(resolve, duration));
 
+const getRoleAnimationParts = (language) => {
+  const finalText = translations[language].terminalRole;
+
+  if (language === 'es') {
+    return {
+      prefix: 'Software Developer y',
+      temporaryText: ' creador de bugs a tiempo completo',
+      suffix: ' Estudiante de Ingeniería en Sistemas (5º año)',
+      finalText
+    };
+  }
+
+  return {
+    prefix: 'Software Developer and',
+    temporaryText: ' full-time bug manufacturer',
+    suffix: ' Systems Engineering student (5th year)',
+    finalText
+  };
+};
+
 const typeLine = async (line) => {
   const text = line.dataset.text || '';
   line.textContent = '';
   line.style.visibility = 'visible';
+
+  if (line.dataset.i18n === 'terminalRole') {
+    const { prefix, temporaryText, suffix } = getRoleAnimationParts(currentLanguage);
+
+    for (const character of prefix) {
+      line.textContent += character;
+      await wait(typingSpeed);
+    }
+
+    for (const character of temporaryText) {
+      line.textContent += character;
+      await wait(typingSpeed);
+    }
+
+    await wait(typingSpeed * 10);
+
+    for (let index = temporaryText.length; index > 0; index--) {
+      line.textContent = line.textContent.slice(0, -1);
+      await wait(typingSpeed * 0.6);
+    }
+
+    for (const character of suffix) {
+      line.textContent += character;
+      await wait(typingSpeed);
+    }
+
+    return;
+  }
 
   for (const character of text) {
     line.textContent += character;
