@@ -4,6 +4,7 @@ const cvLink = document.querySelector('.cv-link');
 const typingSpeed = 30;
 const linePause = 300;
 let terminalReady = false;
+let animationRun = 0;
 
 const translations = {
   es: {
@@ -118,13 +119,15 @@ const applyLanguage = (language) => {
   currentLanguage = language;
   document.documentElement.lang = language;
 
+  const wasReady = terminalReady;
+
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     const text = translations[language][element.dataset.i18n];
 
     if (element.classList.contains('terminal-line')) {
       element.dataset.text = text;
 
-      if (terminalReady) {
+      if (wasReady) {
         const cursor = element.querySelector('.cursor');
         element.textContent = text;
         if (cursor) element.appendChild(cursor);
@@ -133,6 +136,10 @@ const applyLanguage = (language) => {
       element.textContent = text;
     }
   });
+
+  if (!wasReady) {
+    restartTerminalAnimation();
+  }
 
   if (cvLink) {
     cvLink.href = language === 'es'
@@ -146,9 +153,6 @@ const applyLanguage = (language) => {
   languageToggle.title = language === 'es' ? 'Switch to English' : 'Cambiar a español';
   localStorage.setItem('site-language', language);
 };
-
-applyLanguage(currentLanguage);
-languageToggle.addEventListener('click', () => applyLanguage(currentLanguage === 'es' ? 'en' : 'es'));
 
 const wait = (duration) => new Promise((resolve) => setTimeout(resolve, duration));
 
@@ -172,7 +176,7 @@ const getRoleAnimationParts = (language) => {
   };
 };
 
-const typeLine = async (line) => {
+const typeLine = async (line, runId) => {
   const text = line.dataset.text || '';
   line.textContent = '';
   line.style.visibility = 'visible';
@@ -181,23 +185,28 @@ const typeLine = async (line) => {
     const { prefix, temporaryText, suffix } = getRoleAnimationParts(currentLanguage);
 
     for (const character of prefix) {
+      if (runId !== animationRun) return;
       line.textContent += character;
       await wait(typingSpeed);
     }
 
     for (const character of temporaryText) {
+      if (runId !== animationRun) return;
       line.textContent += character;
       await wait(typingSpeed);
     }
 
+    if (runId !== animationRun) return;
     await wait(typingSpeed * 10);
 
     for (let index = temporaryText.length; index > 0; index--) {
+      if (runId !== animationRun) return;
       line.textContent = line.textContent.slice(0, -1);
       await wait(typingSpeed * 0.6);
     }
 
     for (const character of suffix) {
+      if (runId !== animationRun) return;
       line.textContent += character;
       await wait(typingSpeed);
     }
@@ -206,27 +215,47 @@ const typeLine = async (line) => {
   }
 
   for (const character of text) {
+    if (runId !== animationRun) return;
     line.textContent += character;
     await wait(typingSpeed);
   }
 };
 
 const showTerminal = async () => {
+  const runId = ++animationRun;
+  terminalReady = false;
+
   for (const [index, line] of [...terminalLines].entries()) {
-    await typeLine(line);
+    await typeLine(line, runId);
+    if (runId !== animationRun) return;
     if (index < terminalLines.length - 1) {
       await wait(linePause);
     }
   }
 
+  if (runId !== animationRun) return;
+
   const finalLine = terminalLines[terminalLines.length - 1];
+  const existingCursor = finalLine.querySelector('.cursor');
+  if (existingCursor) existingCursor.remove();
   finalLine.append(document.createElement('span'));
   finalLine.lastElementChild.className = 'cursor';
   terminalReady = true;
 };
 
+const restartTerminalAnimation = () => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    showTerminalImmediately();
+    return;
+  }
+  showTerminal();
+};
+
 const showTerminalImmediately = () => {
+  ++animationRun;
   terminalLines.forEach((line, index) => {
+    const existingCursor = line.querySelector('.cursor');
+    if (existingCursor) existingCursor.remove();
     line.textContent = line.dataset.text || '';
     if (index === terminalLines.length - 1) {
       const cursor = document.createElement('span');
@@ -234,11 +263,8 @@ const showTerminalImmediately = () => {
       line.append(cursor);
     }
   });
-  terminalReady = true; 
+  terminalReady = true;
 };
 
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  showTerminalImmediately();
-} else {
-  showTerminal();
-}
+applyLanguage(currentLanguage);
+languageToggle.addEventListener('click', () => applyLanguage(currentLanguage === 'es' ? 'en' : 'es'));
