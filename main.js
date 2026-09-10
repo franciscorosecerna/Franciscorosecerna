@@ -1,6 +1,6 @@
 const terminalLines = document.querySelectorAll('.terminal-line');
 const languageToggle = document.querySelector('.language-toggle');
-const cvLink = document.querySelector('.cv-link');
+const cvLink = document.querySelector('.cv-link, a[download][data-i18n="cvDownload"]');
 const typingSpeed = 30;
 const linePause = 300;
 let terminalReady = false;
@@ -54,7 +54,12 @@ const translations = {
     spanish:'Español',
     native:'Nativo',
     english:'Inglés',
-    contactTitle:'¿Un proyecto backend en mente? Hablemos.'
+    contactTitle:'¿Un proyecto backend en mente? Hablemos.',
+    skipToContent:'Saltar al contenido',
+    pageTitle:'Francisco Rose Cerna — Software Developer',
+    metaDescription:'Francisco Rose Cerna, desarrollador backend y estudiante de Ingeniería en Sistemas en Santa Fe, Argentina. Construyo servidores, motores y APIs desde cero en C#, C++ y TypeScript.',
+    socialDescription:'Backend, sistemas y arquitectura de software. Servidores, motores y APIs construidos desde cero en C#, C++ y TypeScript.',
+    locale:'es_AR'
   },
   en: {
     period:'2022 - 2026/2027 (expected) 5th year',
@@ -103,7 +108,12 @@ const translations = {
     spanish:'Spanish',
     native:'Native',
     english:'English',
-    contactTitle:'Have a backend project in mind? Lets talk.'
+    contactTitle:'Have a backend project in mind? Lets talk.',
+    skipToContent:'Skip to content',
+    pageTitle:'Francisco Rose Cerna — Software Developer',
+    metaDescription:'Francisco Rose Cerna, backend developer and Systems Engineering student in Santa Fe, Argentina. I build servers, engines, and APIs from scratch in C#, C++, and TypeScript.',
+    socialDescription:'Backend, systems, and software architecture. Servers, engines, and APIs built from scratch in C#, C++, and TypeScript.',
+    locale:'en_US'
   }
 };
 
@@ -115,9 +125,28 @@ const getInitialLanguage = () => {
 
 let currentLanguage = getInitialLanguage();
 
+const updateMetaTags = (language) => {
+  const t = translations[language];
+
+  document.title = t.pageTitle;
+
+  const setAttr = (id, attr, value) => {
+    const el = document.getElementById(id);
+    if (el) el.setAttribute(attr, value);
+  };
+
+  setAttr('meta-description', 'content', t.metaDescription);
+  setAttr('og-title', 'content', t.pageTitle);
+  setAttr('og-description', 'content', t.socialDescription);
+  setAttr('og-locale', 'content', t.locale);
+  setAttr('twitter-title', 'content', t.pageTitle);
+  setAttr('twitter-description', 'content', t.socialDescription);
+};
+
 const applyLanguage = (language) => {
   currentLanguage = language;
   document.documentElement.lang = language;
+  updateMetaTags(language);
 
   const wasReady = terminalReady;
 
